@@ -28,3 +28,164 @@
 2024-10-17 21:34:36 INFO  DispatcherServlet:532 - Initializing Servlet 'dispatcherServlet'
 2024-10-17 21:34:36 INFO  DispatcherServlet:554 - Completed initialization in 0 ms
 2024-10-17 21:34:37 INFO  UserService:28 - Fetching all users
+2024-10-17 21:38:24 WARN  ExceptionHandlerExceptionResolver:247 - Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource swagger-ui.html.]
+2024-10-17 21:38:24 WARN  ExceptionHandlerExceptionResolver:247 - Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
+2024-10-17 21:38:43 WARN  ExceptionHandlerExceptionResolver:247 - Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource api-docs.]
+2024-10-17 21:38:43 WARN  ExceptionHandlerExceptionResolver:247 - Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
+2024-10-17 21:38:48 INFO  LocalContainerEntityManagerFactoryBean:650 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-10-17 21:38:48 INFO  HikariDataSource:349 - HikariPool-1 - Shutdown initiated...
+2024-10-17 21:38:48 INFO  HikariDataSource:351 - HikariPool-1 - Shutdown completed.
+2024-10-17 21:38:52 INFO  CompleteProjectApplication:50 - Starting CompleteProjectApplication using Java 17.0.7 with PID 10076 (C:\work\workspaces\spring boot\CompleteProject\target\classes started by iamat in C:\work\workspaces\spring boot\CompleteProject)
+2024-10-17 21:38:52 INFO  CompleteProjectApplication:654 - No active profile set, falling back to 1 default profile: "default"
+2024-10-17 21:38:52 INFO  DevToolsPropertyDefaultsPostProcessor:252 - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-10-17 21:38:52 INFO  DevToolsPropertyDefaultsPostProcessor:252 - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-10-17 21:38:53 INFO  RepositoryConfigurationDelegate:143 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-10-17 21:38:53 INFO  RepositoryConfigurationDelegate:211 - Finished Spring Data repository scanning in 43 ms. Found 1 JPA repository interface.
+2024-10-17 21:38:53 INFO  TomcatWebServer:111 - Tomcat initialized with port 8080 (http)
+2024-10-17 21:38:53 INFO  Http11NioProtocol:173 - Initializing ProtocolHandler ["http-nio-8080"]
+2024-10-17 21:38:53 INFO  StandardService:173 - Starting service [Tomcat]
+2024-10-17 21:38:53 INFO  StandardEngine:173 - Starting Servlet engine: [Apache Tomcat/10.1.30]
+2024-10-17 21:38:54 INFO  [/]:173 - Initializing Spring embedded WebApplicationContext
+2024-10-17 21:38:54 INFO  ServletWebServerApplicationContext:296 - Root WebApplicationContext: initialization completed in 1228 ms
+2024-10-17 21:38:54 INFO  LogHelper:31 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-10-17 21:38:54 INFO  Version:44 - HHH000412: Hibernate ORM core version 6.5.3.Final
+2024-10-17 21:38:54 INFO  RegionFactoryInitiator:50 - HHH000026: Second-level cache disabled
+2024-10-17 21:38:54 INFO  SpringPersistenceUnitInfo:87 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-10-17 21:38:54 INFO  HikariDataSource:109 - HikariPool-1 - Starting...
+2024-10-17 21:38:54 INFO  HikariPool:554 - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@5fe5655c
+2024-10-17 21:38:54 INFO  HikariDataSource:122 - HikariPool-1 - Start completed.
+2024-10-17 21:38:55 INFO  JtaPlatformInitiator:59 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-10-17 21:38:55 INFO  LocalContainerEntityManagerFactoryBean:437 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-10-17 21:38:55 WARN  JpaBaseConfiguration$JpaWebConfiguration:236 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-10-17 21:38:56 INFO  OptionalLiveReloadServer:59 - LiveReload server is running on port 35729
+2024-10-17 21:38:56 INFO  Http11NioProtocol:173 - Starting ProtocolHandler ["http-nio-8080"]
+2024-10-17 21:38:56 INFO  TomcatWebServer:243 - Tomcat started on port 8080 (http) with context path '/'
+2024-10-17 21:38:56 INFO  CompleteProjectApplication:56 - Started CompleteProjectApplication in 4.026 seconds (process running for 4.707)
+2024-10-17 21:39:19 INFO  [/]:173 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-10-17 21:39:19 INFO  DispatcherServlet:532 - Initializing Servlet 'dispatcherServlet'
+2024-10-17 21:39:19 INFO  DispatcherServlet:554 - Completed initialization in 1 ms
+2024-10-17 21:39:19 WARN  ExceptionHandlerExceptionResolver:247 - Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource swagger-ui.html.]
+2024-10-17 21:39:19 WARN  ExceptionHandlerExceptionResolver:247 - Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
+2024-10-17 21:41:28 INFO  LocalContainerEntityManagerFactoryBean:650 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-10-17 21:41:28 INFO  HikariDataSource:349 - HikariPool-1 - Shutdown initiated...
+2024-10-17 21:41:28 INFO  HikariDataSource:351 - HikariPool-1 - Shutdown completed.
+2024-10-17 21:41:30 INFO  CompleteProjectApplication:50 - Starting CompleteProjectApplication using Java 17.0.7 with PID 10456 (C:\work\workspaces\spring boot\CompleteProject\target\classes started by iamat in C:\work\workspaces\spring boot\CompleteProject)
+2024-10-17 21:41:30 INFO  CompleteProjectApplication:654 - No active profile set, falling back to 1 default profile: "default"
+2024-10-17 21:41:30 INFO  DevToolsPropertyDefaultsPostProcessor:252 - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-10-17 21:41:30 INFO  DevToolsPropertyDefaultsPostProcessor:252 - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-10-17 21:41:31 INFO  RepositoryConfigurationDelegate:143 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-10-17 21:41:31 INFO  RepositoryConfigurationDelegate:211 - Finished Spring Data repository scanning in 42 ms. Found 1 JPA repository interface.
+2024-10-17 21:41:31 INFO  TomcatWebServer:111 - Tomcat initialized with port 8080 (http)
+2024-10-17 21:41:32 INFO  ServletWebServerApplicationContext:296 - Root WebApplicationContext: initialization completed in 1241 ms
+2024-10-17 21:41:32 INFO  LogHelper:31 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-10-17 21:41:32 INFO  Version:44 - HHH000412: Hibernate ORM core version 6.5.3.Final
+2024-10-17 21:41:32 INFO  RegionFactoryInitiator:50 - HHH000026: Second-level cache disabled
+2024-10-17 21:41:32 INFO  SpringPersistenceUnitInfo:87 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-10-17 21:41:32 INFO  HikariDataSource:109 - HikariPool-1 - Starting...
+2024-10-17 21:41:32 INFO  HikariPool:554 - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@b736706
+2024-10-17 21:41:32 INFO  HikariDataSource:122 - HikariPool-1 - Start completed.
+2024-10-17 21:41:52 INFO  CompleteProjectApplicationTests:50 - Starting CompleteProjectApplicationTests using Java 17.0.7 with PID 3688 (started by iamat in C:\work\workspaces\spring boot\CompleteProject)
+2024-10-17 21:41:52 INFO  CompleteProjectApplicationTests:654 - No active profile set, falling back to 1 default profile: "default"
+2024-10-17 21:41:52 INFO  RepositoryConfigurationDelegate:143 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-10-17 21:41:53 INFO  RepositoryConfigurationDelegate:211 - Finished Spring Data repository scanning in 44 ms. Found 1 JPA repository interface.
+2024-10-17 21:41:53 INFO  LogHelper:31 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-10-17 21:41:53 INFO  Version:44 - HHH000412: Hibernate ORM core version 6.5.3.Final
+2024-10-17 21:41:53 INFO  RegionFactoryInitiator:50 - HHH000026: Second-level cache disabled
+2024-10-17 21:41:53 INFO  SpringPersistenceUnitInfo:87 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-10-17 21:41:53 INFO  HikariDataSource:109 - HikariPool-1 - Starting...
+2024-10-17 21:41:54 INFO  HikariPool:554 - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@61d42275
+2024-10-17 21:41:54 INFO  HikariDataSource:122 - HikariPool-1 - Start completed.
+2024-10-17 21:41:54 INFO  JtaPlatformInitiator:59 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-10-17 21:41:54 INFO  LocalContainerEntityManagerFactoryBean:437 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-10-17 21:41:55 WARN  JpaBaseConfiguration$JpaWebConfiguration:236 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-10-17 21:41:55 INFO  CompleteProjectApplicationTests:56 - Started CompleteProjectApplicationTests in 3.779 seconds (process running for 4.834)
+2024-10-17 21:41:56 INFO  LocalContainerEntityManagerFactoryBean:650 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-10-17 21:41:56 INFO  HikariDataSource:349 - HikariPool-1 - Shutdown initiated...
+2024-10-17 21:41:56 INFO  HikariDataSource:351 - HikariPool-1 - Shutdown completed.
+2024-10-17 21:42:05 INFO  CompleteProjectApplication:50 - Starting CompleteProjectApplication using Java 17.0.7 with PID 13272 (C:\work\workspaces\spring boot\CompleteProject\target\classes started by iamat in C:\work\workspaces\spring boot\CompleteProject)
+2024-10-17 21:42:05 INFO  CompleteProjectApplication:654 - No active profile set, falling back to 1 default profile: "default"
+2024-10-17 21:42:05 INFO  DevToolsPropertyDefaultsPostProcessor:252 - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-10-17 21:42:05 INFO  DevToolsPropertyDefaultsPostProcessor:252 - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-10-17 21:42:05 INFO  RepositoryConfigurationDelegate:143 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-10-17 21:42:05 INFO  RepositoryConfigurationDelegate:211 - Finished Spring Data repository scanning in 48 ms. Found 1 JPA repository interface.
+2024-10-17 21:42:06 INFO  TomcatWebServer:111 - Tomcat initialized with port 8080 (http)
+2024-10-17 21:42:06 INFO  Http11NioProtocol:173 - Initializing ProtocolHandler ["http-nio-8080"]
+2024-10-17 21:42:06 INFO  StandardService:173 - Starting service [Tomcat]
+2024-10-17 21:42:06 INFO  StandardEngine:173 - Starting Servlet engine: [Apache Tomcat/10.1.30]
+2024-10-17 21:42:06 INFO  [/]:173 - Initializing Spring embedded WebApplicationContext
+2024-10-17 21:42:06 INFO  ServletWebServerApplicationContext:296 - Root WebApplicationContext: initialization completed in 1201 ms
+2024-10-17 21:42:06 INFO  LogHelper:31 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-10-17 21:42:06 INFO  Version:44 - HHH000412: Hibernate ORM core version 6.5.3.Final
+2024-10-17 21:42:06 INFO  RegionFactoryInitiator:50 - HHH000026: Second-level cache disabled
+2024-10-17 21:42:06 INFO  SpringPersistenceUnitInfo:87 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-10-17 21:42:06 INFO  HikariDataSource:109 - HikariPool-1 - Starting...
+2024-10-17 21:42:07 INFO  HikariPool:554 - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@7e590eb2
+2024-10-17 21:42:07 INFO  HikariDataSource:122 - HikariPool-1 - Start completed.
+2024-10-17 21:42:08 INFO  JtaPlatformInitiator:59 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-10-17 21:42:08 INFO  LocalContainerEntityManagerFactoryBean:437 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-10-17 21:42:08 WARN  JpaBaseConfiguration$JpaWebConfiguration:236 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-10-17 21:42:09 INFO  OptionalLiveReloadServer:59 - LiveReload server is running on port 35729
+2024-10-17 21:42:09 INFO  Http11NioProtocol:173 - Starting ProtocolHandler ["http-nio-8080"]
+2024-10-17 21:42:09 INFO  TomcatWebServer:243 - Tomcat started on port 8080 (http) with context path '/'
+2024-10-17 21:42:09 INFO  CompleteProjectApplication:56 - Started CompleteProjectApplication in 4.659 seconds (process running for 5.356)
+2024-10-17 21:43:16 INFO  [/]:173 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-10-17 21:43:16 INFO  DispatcherServlet:532 - Initializing Servlet 'dispatcherServlet'
+2024-10-17 21:43:16 INFO  DispatcherServlet:554 - Completed initialization in 1 ms
+2024-10-17 21:43:16 WARN  ExceptionHandlerExceptionResolver:247 - Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource swagger-ui.html.]
+2024-10-17 21:43:16 WARN  ExceptionHandlerExceptionResolver:247 - Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
+2024-10-17 21:46:24 INFO  LocalContainerEntityManagerFactoryBean:650 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-10-17 21:46:24 INFO  HikariDataSource:349 - HikariPool-1 - Shutdown initiated...
+2024-10-17 21:46:24 INFO  HikariDataSource:351 - HikariPool-1 - Shutdown completed.
+2024-10-17 21:46:29 INFO  CompleteProjectApplication:50 - Starting CompleteProjectApplication using Java 17.0.7 with PID 20444 (C:\work\workspaces\spring boot\CompleteProject\target\classes started by iamat in C:\work\workspaces\spring boot\CompleteProject)
+2024-10-17 21:46:29 INFO  CompleteProjectApplication:654 - No active profile set, falling back to 1 default profile: "default"
+2024-10-17 21:46:29 INFO  DevToolsPropertyDefaultsPostProcessor:252 - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-10-17 21:46:29 INFO  DevToolsPropertyDefaultsPostProcessor:252 - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-10-17 21:46:30 INFO  RepositoryConfigurationDelegate:143 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-10-17 21:46:30 INFO  RepositoryConfigurationDelegate:211 - Finished Spring Data repository scanning in 52 ms. Found 1 JPA repository interface.
+2024-10-17 21:46:30 INFO  TomcatWebServer:111 - Tomcat initialized with port 8080 (http)
+2024-10-17 21:46:30 INFO  Http11NioProtocol:173 - Initializing ProtocolHandler ["http-nio-8080"]
+2024-10-17 21:46:31 INFO  StandardService:173 - Starting service [Tomcat]
+2024-10-17 21:46:31 INFO  StandardEngine:173 - Starting Servlet engine: [Apache Tomcat/10.1.30]
+2024-10-17 21:46:31 INFO  [/]:173 - Initializing Spring embedded WebApplicationContext
+2024-10-17 21:46:31 INFO  ServletWebServerApplicationContext:296 - Root WebApplicationContext: initialization completed in 1200 ms
+2024-10-17 21:46:31 INFO  LogHelper:31 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-10-17 21:46:31 INFO  Version:44 - HHH000412: Hibernate ORM core version 6.5.3.Final
+2024-10-17 21:46:31 INFO  RegionFactoryInitiator:50 - HHH000026: Second-level cache disabled
+2024-10-17 21:46:31 INFO  SpringPersistenceUnitInfo:87 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-10-17 21:46:31 INFO  HikariDataSource:109 - HikariPool-1 - Starting...
+2024-10-17 21:46:31 INFO  HikariPool:554 - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@447121db
+2024-10-17 21:46:31 INFO  HikariDataSource:122 - HikariPool-1 - Start completed.
+2024-10-17 21:46:32 INFO  JtaPlatformInitiator:59 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-10-17 21:46:32 INFO  LocalContainerEntityManagerFactoryBean:437 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-10-17 21:46:32 WARN  JpaBaseConfiguration$JpaWebConfiguration:236 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-10-17 21:46:33 INFO  OptionalLiveReloadServer:59 - LiveReload server is running on port 35729
+2024-10-17 21:46:33 INFO  Http11NioProtocol:173 - Starting ProtocolHandler ["http-nio-8080"]
+2024-10-17 21:46:33 INFO  TomcatWebServer:243 - Tomcat started on port 8080 (http) with context path '/'
+2024-10-17 21:46:33 INFO  CompleteProjectApplication:56 - Started CompleteProjectApplication in 3.766 seconds (process running for 4.566)
+2024-10-17 21:47:09 INFO  [/]:173 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-10-17 21:47:09 INFO  DispatcherServlet:532 - Initializing Servlet 'dispatcherServlet'
+2024-10-17 21:47:09 INFO  DispatcherServlet:554 - Completed initialization in 1 ms
+2024-10-17 21:47:09 INFO  UserService:28 - Fetching all users
+2024-10-17 21:47:54 WARN  ExceptionHandlerExceptionResolver:247 - Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource swagger-ui.html.]
+2024-10-17 21:47:55 WARN  ExceptionHandlerExceptionResolver:247 - Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
+2024-10-17 21:48:49 INFO  LocalContainerEntityManagerFactoryBean:650 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-10-17 21:48:49 INFO  HikariDataSource:349 - HikariPool-1 - Shutdown initiated...
+2024-10-17 21:48:49 INFO  HikariDataSource:351 - HikariPool-1 - Shutdown completed.
+2024-10-17 21:49:07 INFO  CompleteProjectApplicationTests:50 - Starting CompleteProjectApplicationTests using Java 17.0.7 with PID 12072 (started by iamat in C:\work\workspaces\spring boot\CompleteProject)
+2024-10-17 21:49:07 INFO  CompleteProjectApplicationTests:654 - No active profile set, falling back to 1 default profile: "default"
+2024-10-17 21:49:08 INFO  RepositoryConfigurationDelegate:143 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-10-17 21:49:08 INFO  RepositoryConfigurationDelegate:211 - Finished Spring Data repository scanning in 42 ms. Found 1 JPA repository interface.
+2024-10-17 21:49:08 INFO  LogHelper:31 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-10-17 21:49:08 INFO  Version:44 - HHH000412: Hibernate ORM core version 6.5.3.Final
+2024-10-17 21:49:08 INFO  RegionFactoryInitiator:50 - HHH000026: Second-level cache disabled
+2024-10-17 21:49:08 INFO  SpringPersistenceUnitInfo:87 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-10-17 21:49:09 INFO  HikariDataSource:109 - HikariPool-1 - Starting...
+2024-10-17 21:49:09 INFO  HikariPool:554 - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@552088cc
+2024-10-17 21:49:09 INFO  HikariDataSource:122 - HikariPool-1 - Start completed.
+2024-10-17 21:49:10 INFO  JtaPlatformInitiator:59 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-10-17 21:49:10 INFO  LocalContainerEntityManagerFactoryBean:437 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-10-17 21:49:10 WARN  JpaBaseConfiguration$JpaWebConfiguration:236 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-10-17 21:49:10 INFO  CompleteProjectApplicationTests:56 - Started CompleteProjectApplicationTests in 3.825 seconds (process running for 4.846)
+2024-10-17 21:49:11 INFO  LocalContainerEntityManagerFactoryBean:650 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-10-17 21:49:11 INFO  HikariDataSource:349 - HikariPool-1 - Shutdown initiated...
+2024-10-17 21:49:11 INFO  HikariDataSource:351 - HikariPool-1 - Shutdown completed.
