@@ -33,7 +33,7 @@ public class UserService {
     }
 
     public Optional<UserDTO> getUserById(Long id) {
-        logger.debug("Fetching user with id: {}", id);
+        logger.info("Fetching user with id: {}", id);
         return Optional.ofNullable(userRepository.findById(id)
                 .map(userMapper::toDto)
                 .orElseThrow(() -> new UserNotFoundException(id)));

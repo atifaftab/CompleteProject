@@ -5,6 +5,7 @@ import com.atif.CompleteProject.service.UserService;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.tags.Tag;
 import lombok.AllArgsConstructor;
+import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
@@ -35,7 +36,8 @@ public class UserController {
     @PostMapping
     @Operation(summary = "Create a new user")
     public ResponseEntity<UserDTO> createUser(@RequestBody UserDTO userDTO) {
-        return ResponseEntity.ok(userService.createUser(userDTO));
+//        return ResponseEntity.ok(userService.createUser(userDTO));
+        return new ResponseEntity<>(userService.createUser(userDTO), HttpStatus.CREATED);
     }
 
     @PutMapping("/{id}")
