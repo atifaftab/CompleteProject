@@ -1,0 +1,28 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: CompleteProject
+  datasource:
+    url: jdbc:mysql://localhost:3306/completeprojectdb
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: root
+    password: root
+    initialization-mode: always
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+
+logging:
+  level:
+    root: INFO
+    com.example.usercrud: DEBUG
+
+# OpenAPI (Swagger) Configuration
+springdoc:
+  api-docs:
+    path: /api-docs
+  swagger-ui:
+    path: /swagger-ui.html
