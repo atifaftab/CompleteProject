@@ -21,7 +21,7 @@ spring:
 logging:
   level:
     root: INFO
-    com.example.usercrud: DEBUG
+    com.atif.CompleteProject: DEBUG
 
 # OpenAPI (Swagger) Configuration
 springdoc:
