@@ -28,14 +28,14 @@ public class UserService {
         logger.info("Fetching all users");
         return userRepository.findAll()
                 .stream()
-                .map(userMapper::toDto)
+                .map(userMapper::toDTO)
                 .collect(Collectors.toList());
     }
 
     public Optional<UserDTO> getUserById(Long id) {
         logger.info("Fetching user with id: {}", id);
         return Optional.ofNullable(userRepository.findById(id)
-                .map(userMapper::toDto)
+                .map(userMapper::toDTO)
                 .orElseThrow(() -> new UserNotFoundException(id)));
     }
 
@@ -49,7 +49,7 @@ public class UserService {
         return Optional.of(userDTO)
                 .map(userMapper::toEntity)
                 .map(userRepository::save)
-                .map(userMapper::toDto)
+                .map(userMapper::toDTO)
                 .orElseThrow(() -> new InvalidUserException("Unable to create user"));
     }
 
@@ -66,7 +66,7 @@ public class UserService {
                     existingUser.setEmail(userDTO.getEmail());
                     return userRepository.save(existingUser);
                 })
-                .map(userMapper::toDto)
+                .map(userMapper::toDTO)
                 .orElseThrow(() -> new UserNotFoundException(id)));
     }
 
@@ -101,6 +101,6 @@ public class UserService {
                 .map(userRepository::save)
                 .orElseThrow(() -> new InvalidUserException("Unable to create new user"));
 
-        return updatedUser.map(userMapper::toDto);
+        return updatedUser.map(userMapper::toDTO);
     }
 }
