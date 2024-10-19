@@ -22,7 +22,7 @@
         </Root>
 
         <!-- Specific package logger for DEBUG -->
-        <Logger name="com.example.usercrud" level="debug" additivity="false">
+        <Logger name="com.atif.CompleteProject" level="debug" additivity="false">
             <AppenderRef ref="Console"/>
             <AppenderRef ref="File"/>
         </Logger>
