@@ -2,6 +2,7 @@ package com.atif.CompleteProject.service;
 
 import com.atif.CompleteProject.dto.UserDTO;
 import com.atif.CompleteProject.entity.User;
+import com.atif.CompleteProject.exception.ResourceNotFoundException;
 import com.atif.CompleteProject.mapper.UserMapper;
 import com.atif.CompleteProject.repository.UserRepository;
 import org.junit.jupiter.api.BeforeEach;
@@ -12,7 +13,7 @@ import org.mockito.MockitoAnnotations;
 
 import java.util.Optional;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.*;
 import static org.mockito.ArgumentMatchers.any;
 import static org.mockito.Mockito.when;
 
@@ -38,7 +39,7 @@ public class UserServiceTest {
     }
 
     @Test
-    public void testCreateUser() {
+    public void testCreateUserSuccess() {
         when(userMapper.toEntity(any(UserDTO.class))).thenReturn(user);
         when(userRepository.save(any(User.class))).thenReturn(user);
         when(userMapper.toDTO(any(User.class))).thenReturn(userDTO);
@@ -49,13 +50,48 @@ public class UserServiceTest {
     }
 
     @Test
-    public void testGetUserById() {
+    public void testCreateUserFailure_NullUser() {
+        when(userRepository.save(null)).thenThrow(IllegalArgumentException.class);
+
+        assertThrows(IllegalArgumentException.class, () -> {
+            userService.createUser(null);
+        });
+    }
+
+    @Test
+    public void testGetUserByIdSuccess() {
         when(userRepository.findById(1L)).thenReturn(Optional.of(user));
         when(userMapper.toDTO(any(User.class))).thenReturn(userDTO);
 
-
         Optional<UserDTO> result = userService.getUserById(1L);
-        assertEquals(true, result.isPresent());
+        assertTrue(result.isPresent());
         assertEquals(userDTO.getName(), result.get().getName());
+    }
+
+    @Test
+    public void testGetUserByIdFailure_UserNotFound() {
+        when(userRepository.findById(1L)).thenReturn(Optional.empty());
+
+        assertThrows(ResourceNotFoundException.class, () -> {
+            userService.getUserById(1L);
+        });
+    }
+
+    @Test
+    public void testUpdateUserFailure_UserNotFound() {
+        when(userRepository.findById(1L)).thenReturn(Optional.empty());
+
+        assertThrows(ResourceNotFoundException.class, () -> {
+            userService.updateUser(1L, userDTO);
+        });
+    }
+
+    @Test
+    public void testDeleteUserFailure_UserNotFound() {
+        when(userRepository.findById(1L)).thenReturn(Optional.empty());
+
+        assertThrows(ResourceNotFoundException.class, () -> {
+            userService.deleteUser(1L);
+        });
     }
 }
