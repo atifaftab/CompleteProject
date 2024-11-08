@@ -3,6 +3,7 @@ package com.atif.CompleteProject.service;
 import com.atif.CompleteProject.dto.UserDTO;
 import com.atif.CompleteProject.entity.User;
 import com.atif.CompleteProject.exception.ResourceNotFoundException;
+import com.atif.CompleteProject.exception.UserNotFoundException;
 import com.atif.CompleteProject.mapper.UserMapper;
 import com.atif.CompleteProject.repository.UserRepository;
 import org.junit.jupiter.api.BeforeEach;
@@ -53,7 +54,7 @@ public class UserServiceTest {
     public void testCreateUserFailure_NullUser() {
         when(userRepository.save(null)).thenThrow(IllegalArgumentException.class);
 
-        assertThrows(IllegalArgumentException.class, () -> {
+        assertThrows(NullPointerException.class, () -> {
             userService.createUser(null);
         });
     }
@@ -72,7 +73,7 @@ public class UserServiceTest {
     public void testGetUserByIdFailure_UserNotFound() {
         when(userRepository.findById(1L)).thenReturn(Optional.empty());
 
-        assertThrows(ResourceNotFoundException.class, () -> {
+        assertThrows(UserNotFoundException.class, () -> {
             userService.getUserById(1L);
         });
     }
@@ -81,7 +82,7 @@ public class UserServiceTest {
     public void testUpdateUserFailure_UserNotFound() {
         when(userRepository.findById(1L)).thenReturn(Optional.empty());
 
-        assertThrows(ResourceNotFoundException.class, () -> {
+        assertThrows(UserNotFoundException.class, () -> {
             userService.updateUser(1L, userDTO);
         });
     }
@@ -90,7 +91,7 @@ public class UserServiceTest {
     public void testDeleteUserFailure_UserNotFound() {
         when(userRepository.findById(1L)).thenReturn(Optional.empty());
 
-        assertThrows(ResourceNotFoundException.class, () -> {
+        assertThrows(UserNotFoundException.class, () -> {
             userService.deleteUser(1L);
         });
     }
